@@ -71,9 +71,35 @@ label {
   background-color: #d45251;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
-  margin-top: 1rem;
+  margin: 1rem 0 1rem 0;
   border: none;
   color: #151618;
   padding: 1rem 3rem;
   border-radius: 0.2rem;
+}
+
+.result__departure,
+.result__arrival {
+  padding: 1rem;
+  width: 100%;
+  background-color: #38434f;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.result__departure {
+  display: flex;
+  border-bottom: 1px solid #bcbec2;
+}
+
+.result__arrival {
+  display: flex;
+}
+
+.arrival,
+.departure {
+  margin-left: 0.7rem;
 }
