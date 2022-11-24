@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5342200fc3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Beräkna ankomstdag</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="search__container">
+        <i class="fa-solid fa-ship fa-5x"></i>
+        <input
+          type="text"
+          class="departure__input"
+          placeholder="Avgång"
+        />
+        <input type="text" class="route__input" placeholder="Route" />
+        <button class="route__btn">Beräkna</button>
+      </section>
+
+      <section class="result__container">
+        <p>Avgång:</p>
+        <p class="departure"></p>
+        <p>Ankomst:</p>
+        <p class="arrival"></p>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
