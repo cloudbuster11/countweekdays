@@ -7,17 +7,15 @@ const arrivalElem = document.querySelector('.arrival');
 routeBtn.addEventListener('click', getRoute);
 
 function getRoute() {
-  let choosenDay = parseInt(inputDeparture.value);
+  let choosenDay = inputDeparture.value;
   let choosenRoute = parseInt(inputRoute.value);
-  console.log(choosenRoute);
-  console.log(choosenDay);
   removeResults();
   getDay(choosenDay, choosenRoute);
 }
 
 function getDay(choosenDay, choosenRoute) {
-  let d = new Date();
-  d.setDate(d.getDate() + choosenDay);
+  let d = new Date(choosenDay);
+  // d.setDate(d.getDate() + choosenDay);
   departureElem.textContent = `${d}`;
   console.log(`Avgångsdag är: ${d}day`);
 
